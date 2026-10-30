@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="340"
+     height="620"
+     viewBox="0 0 340 620">
+
+    <!-- Background -->
+    <rect width="340" height="620" fill="#FFFFFF"/>
+
+    <!-- Carton Body -->
+    <rect x="60"
+          y="90"
+          width="220"
+          height="470"
+          fill="#FFFFFF"
+          stroke="#2e5e98"
+          stroke-width="1"/>
+
+    <!-- Roof Top -->
+    <polygon points="90,40 250,40 280,90 60,90"
+             fill="#023F88"/>
+
+    <!-- Cap -->
+    <circle cx="240"
+            cy="65"
+            r="18"
+            fill="#FF8C00"/>
+
+    <!-- Brand -->
+    <text x="170"
+          y="170"
+          text-anchor="middle"
+          fill="#023F88"
+          font-size="42"
+          font-weight="bold">
+        GHOST
+    </text>
+
+    <text x="170"
+          y="220"
+          text-anchor="middle"
+          fill="#FF8C00"
+          font-size="42"
+          font-weight="bold">
+        MILK
+    </text>
+
+    <!-- Ghost Character -->
+    <circle cx="170"
+            cy="330"
+            r="60"
+            fill="#023F88"/>
+
+    <!-- Eyes -->
+    <circle cx="150"
+            cy="315"
+            r="7"
+            fill="#FFFFFF"/>
+
+    <circle cx="190"
+            cy="315"
+            r="7"
+            fill="#FFFFFF"/>
+
+    <!-- Smile -->
+    <path d="M145 350
+             Q170 370
+             195 350"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-width="1"/>
+
+    <!-- Funny Text -->
+    <text x="170"
+          y="450"
+          text-anchor="middle"
+          fill="#FF8C00"
+          font-size="24"
+          font-weight="bold">
+        Vitamin BOO!
+    </text>
+
+    <text x="170"
+          y="490"
+          text-anchor="middle"
+          fill="#023F88"
+          font-size="20"
+		  font-weight="bold"
+		  font-family="Arial, sans-serif">
+        NG MATERIAL DB
+    </text>
+
+    <!-- Volume -->
+    <text x="170"
+          y="535"
+          text-anchor="middle"
+          fill="#023F88"
+          font-size="32"
+          font-weight="bold">
+        1 L
+    </text>
+
+</svg>

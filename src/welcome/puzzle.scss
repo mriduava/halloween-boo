@@ -1,0 +1,179 @@
+.puzzle {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    display: flex;
+    padding: 0;
+}
+
+/* LEFT */
+.leftPanel {
+    width: 40%;
+    min-width: 280px;
+    border-right: 2px solid #bac1c9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.constructionImage {
+    width: min(260px, 80%);
+    max-height: 320px;
+    object-fit: contain;
+}
+
+.messageBox {
+    margin-top: 20px;
+    border: 2px solid #023F88;
+    border-radius: 8px;
+    color: #023F88;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* RIGHT */
+.rightPanel {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f3f3f3;
+}
+
+.rightPanel h1{
+    padding: 0;
+    font-size: 2rem;
+    color: #FF8C00;
+    margin: 0;
+}
+
+.rightPanel h1 span {
+    font-size: 3rem;
+}
+
+.hud {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 15px 0;
+    color: #023F88;
+    font-weight: bold;
+    margin: 5px 0 20px 0;
+}
+
+.playArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* MATERIALS */
+.pieces {
+    width: 240px;
+}
+
+.pieceCard {
+    background: #fbfbff;
+    color: #023F88;
+    border: 1px solid #FF8C00;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: grab;
+}
+
+/* CARTON */
+.carton {
+    width: min(340px, 25vw);
+    height: calc(min(340px, 25vw) * 1.8235);
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted #9a9aa8;
+}
+
+.slot {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px dotted #b4b4b4;
+    background: #fff;
+}
+
+.slot:last-child {
+    border-bottom: none;
+}
+
+/* THIS IS THE IMPORTANT PART */
+.sliceWrapper {
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.sliceImage {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: calc(100% * 6);
+    max-width: none;
+}
+
+.svgPiece {
+    width: 100%;
+    height: 100%;
+}
+
+.dropLabel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #023F88;
+    font-weight: 600;
+}
+
+/* POPUPS */
+.popup {
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    width: 320px;
+    background: white;
+    border: 1px solid #c0c1c3;
+    border-radius: 8px;
+    padding: 15px;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.popup h3 {
+    color: #FF8C00;
+    margin-top: 0;
+    margin: 10px auto ;
+}
+
+.winner {
+    position: absolute;
+    top: 45%;
+    right: 55%;
+    border: 1px solid #FF8C00;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    color: #FF8C00;
+    font-weight: bold;
+    z-index: 1000;
+    width: auto;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.51);
+}
